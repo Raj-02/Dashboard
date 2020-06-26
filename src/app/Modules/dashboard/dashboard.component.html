@@ -1,27 +1,41 @@
 <div>
-    <mat-form-field>
-      <br>
-      <br>
-        <mat-label>Enviroment</mat-label>
+  <mat-card>
+    <div fxLayout="column"  fxLayoutGap="20px">
+     <mat-card class="dropDown">          
+        <mat-label>Select an Enviroment</mat-label>
         <br>
-        <mat-select disableRipple>
-          <mat-option value="1">Devlopment</mat-option>
-          <mat-option value="2">UAT</mat-option>
-          <mat-option value="3">Production</mat-option>
-        </mat-select>
-      </mat-form-field>
+        <br>
+         <mat-select disableRipple>
+            <mat-option value="1">Devlopment</mat-option>
+           <mat-option value="2">UAT</mat-option>
+           <mat-option value="3">Production</mat-option>
+         </mat-select>
+    </mat-card>
+        <mat-card class="graph">    
+            <app-cpu-utliz></app-cpu-utliz>
+        </mat-card>
+
+             <br>
+      <div fxLayout="row"  fxLayoutGap="20px" fxLayoutAlign="space-between center">
+        <mat-card fxflex="40">
+          table
+        </mat-card>
+        <mat-card fxflex="60">
+          <app-pie-chart></app-pie-chart>
+        </mat-card>
+      </div>
     
-    <app-cpu-utliz></app-cpu-utliz>
-    <br>
-    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
-        <mat-card fxflex="75">Charts</mat-card>
-        <mat-card fxflex="30">table</mat-card>
     </div>
-    
+  </mat-card>
 </div>
 
 <mat-divider></mat-divider>
 
+<br>
+<br>
+
 <div>
+  <mat-card>
     <div>table</div>
+  </mat-card>
 </div>

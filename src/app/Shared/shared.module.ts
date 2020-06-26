@@ -13,6 +13,12 @@ import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 import { CpuUtlizComponent } from './widgets/cpu-utliz/cpu-utliz.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { PieChartComponent } from './widgets/pie-chart/pie-chart.component';
+import { TableComponent } from './widgets/table/table.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+import {MatTableDataSource} from '@angular/material/table';
+import { EnvDataComponent } from './env-data/env-data.component';
 
 
 @NgModule({
@@ -20,7 +26,10 @@ import { HighchartsChartModule } from 'highcharts-angular';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    CpuUtlizComponent
+    CpuUtlizComponent,
+    PieChartComponent,
+    TableComponent,
+    EnvDataComponent
   ],
   imports: [
     CommonModule,
@@ -32,14 +41,19 @@ import { HighchartsChartModule } from 'highcharts-angular';
     MatMenuModule,
     MatListModule,
     RouterModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    MatPaginatorModule,
+    MatSortModule
 
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    CpuUtlizComponent
+    CpuUtlizComponent,
+    PieChartComponent,
+    TableComponent,
+    EnvDataComponent
   ]
 })
 export class SharedModule { }

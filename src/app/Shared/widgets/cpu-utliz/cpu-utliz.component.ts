@@ -53,7 +53,7 @@ export class CpuUtlizComponent implements OnInit {
   },
 
     series: [{
-      data: [1, 2, 3, 4, 5, 6, 5],
+      data: [1, 2, 3, 4, 5, 6, 5, 10],
       type: 'area'
     }]
   };

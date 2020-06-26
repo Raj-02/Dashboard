@@ -11,6 +11,7 @@ import { SharedModule } from 'src/app/Shared/shared.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
+import { DashboardService } from 'src/app/Modules/dashboard.service';
 
 
 
@@ -31,6 +32,9 @@ import {MatSelectModule} from '@angular/material/select';
     MatCardModule,
     MatFormFieldModule,
     MatSelectModule
+  ],
+  providers: [
+    DashboardService
   ]
 })
 export class MasterPageModule { }
