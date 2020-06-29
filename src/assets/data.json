@@ -1,0 +1,20 @@
+{
+    "data" : [
+    {
+         "Servername" : "DEV",
+         "Cpuutliz" : "2"
+         
+    },
+        {
+        "Servername" : "UAT",
+        "Cpuutliz" : "6"
+        
+   },
+   {
+    "Servername" : "PROD",
+    "Cpuutliz" : "4"
+    
+    }
+          ]
+}
+    

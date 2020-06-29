@@ -1,0 +1,41 @@
+{
+    "data" : [
+    {
+         "Servername" : "DEV",
+         "Cpuutliz" : "2,4,6,8,6",
+         "User": "SA",
+         "Size" :
+            [
+                {"Drive" : "C", "Space" : "500gb"},
+                {"Drive" : "D", "Space" : "300gb"},
+                {"Drive" : "E", "Space" : "250gb"},
+                {"Drive" : "F", "Space" : "400gb"}
+             ]
+    },
+        {
+        "Servername" : "UAT",
+        "Cpuutliz" : "2,4,6,8,6",
+        "User": "SA",
+        "Size" :
+           [
+               {"Drive" : "C", "Space" : "500gb"},
+               {"Drive" : "D", "Space" : "300gb"},
+               {"Drive" : "E", "Space" : "250gb"},
+               {"Drive" : "F", "Space" : "400gb"}
+            ]
+   },
+   {
+    "Servername" : "PROD",
+    "Cpuutliz" : "2,4,6,8,6",
+    "User": "SA",
+    "Size" :
+       [
+           {"Drive" : "C", "Space" : "500gb"},
+           {"Drive" : "D", "Space" : "300gb"},
+           {"Drive" : "E", "Space" : "250gb"},
+           {"Drive" : "F", "Space" : "400gb"}
+        ]
+}
+    ]
+}
+    

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
+
 
 
 @Component({
@@ -11,9 +12,13 @@ import HC_exporting from 'highcharts/modules/exporting';
 export class CpuUtlizComponent implements OnInit {
   constructor() { }
 
+  @Input() data: any = [];
 
   Highcharts: typeof Highcharts = Highcharts;
-  chartOptions: Highcharts.Options = {
+  chartOptions: Highcharts.Options = {  };
+
+  ngOnInit(): void {
+    this.chartOptions = {
     chart: {
       zoomType: 'x'
   },
@@ -53,12 +58,10 @@ export class CpuUtlizComponent implements OnInit {
   },
 
     series: [{
-      data: [1, 2, 3, 4, 5, 6, 5, 10],
+      data: this.data,
       type: 'area'
     }]
   };
-
-  ngOnInit(): void {
 
     HC_exporting(Highcharts);
     setTimeout(() => { window.dispatchEvent(new Event('resize'));
